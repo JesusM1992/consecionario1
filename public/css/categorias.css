@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background : linear-gradient(rgb(251,248,242),rgb(140,177,162));*/
+    background: rgba(220, 220, 220, 0.822);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: auto;
+}
+.form-box {
+    width: 350px;
+    padding: 40px;
+    background: rgb(34,83,78);
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: 10px solid rgba(0,0,0,.2);
+}
+
+.form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: rgb(140,177,162);
+}*/
+section{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 85%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de transparencia */
+    box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.801); /* Sombra ligera */
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilo para las celdas del encabezado */
+  .table th {
+    background-color: #141414b7; /* Color de fondo para el encabezado */
+    padding: 10px;
+  }
+  
+  /* Estilo para las celdas de datos */
+  .table td {
+    text-align: center;
+    padding: 8px;
+  }
+
+   /* Estilo para los botones "Actualizar" y "Eliminar" */
+   .table .btnact {
+    background-color: #4caf50; /* Verde */
+    color: #fff; /* Color de texto blanco */
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+     }
+  
+      /* Estilo para el botón "Eliminar" (rojo) */
+      .table .btneli {
+        background-color: #f44336; /* Rojo */
+        color: #fff; /* Color de texto blanco */
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+  
+      /* Cambio de color al pasar el ratón sobre los botones */
+      .table .btnact:hover {
+        background-color: #45a049; /* Verde más oscuro */
+      }
+  
+      .table .btneli:hover {
+        background-color: #f22a1d; /* Rojo más oscuro */
+      }
+  .table input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(
+       auto-fit,
+       minmax(150px , 1fr)
+    );
+    gap:32px;
+  }
+  .products .product {
+    width: 18%;
+    margin-bottom: 18px;
+    padding: 10px;
+
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: -15px;
+    padding-right: -15px;
+  }
+  .productos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .producto {
+    background-color: rgba(43, 43, 43, 0.041);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto */
+    text-align: center;
+  }
+  
+  .producto:hover {
+    box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.801); /* Sombra al pasar el mouse */
+  }
+  
+  .producto img {
+	width: 85%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 10px;
+  }
+  
+  .producto h2 {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+  }
+  
+  .producto p {
+	margin-bottom: 10px;
+  }
+  
+  .producto button {
+	padding: 8px 16px;
+	background-color: #141414b7;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .producto button:hover {
+	background-color: #141414d2;
+  }
+
+@media screen and (max-width: 768px) {
+    .categoria {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categoria {
+        width: 100%;
+    }
+}
+
+.cate {
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none;
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.cate:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón sobre él */
+}
+
+.cate a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #fff; /* Color del texto del enlace */
+}
+
+.bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh; /* Asegura que el contenedor div ocupe toda la altura del viewport */
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vehiculos</title>
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+
+<!--TABLA DE CATEGORIAS-->
+<section class="tab">
+    <from action="" name="frm" id="frm">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TIPO CATEGORIA</th>
+                    <th>ACTUALIZAR</th>
+                    <th>ELIMINAR</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.CatId%>" name="catid" id="catid" class="daid"></td>
+                    <td><input type="text" value="<%=datos.CatTipo%>" name="tip" id="tip" class="tip"></td>  
+                    <td><input type="submit" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+                    <td><input type="submit" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>                  
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+        <div class="bttn">
+        <button class="cate"><a href="/vehiculos">volver</a></button>
+    </div>
+    </section>
+    </from>
+    
+<!--CIERRE TABLA DE CATEGORIAS-->
+<div class="titulo"> 
+    <h1>Tipo Automoviles</h1></div>    
+<section class="productos">
+    <div class="producto">
+      <img src="img/automovil1.jpg" alt="Producto 1">
+      <h2>Producto 1</h2>
+      <p>Descripción del automovil 1.</p>
+      <p>Precio: $100</p>
+      <button>Ver</button>
+    </div>
+    
+    <div class="producto">
+      <img src="img/automovil2.jpg" alt="Producto 2">
+      <h2>Producto 2</h2>
+      <p>Descripción del automovil 2.</p>
+      <p>Precio: $80</p>
+      <button>Ver</button>
+    </div>
+    
+    <div class="producto">
+      <img src="img/automovil5.jpg" alt="Producto 3">
+      <h2>Producto 3</h2>
+      <p>Descripción del automovil 3.</p>
+      <p>Precio: $120</p>
+      <button>Ver</button>
+    </div>
+    
+    <div class="producto">
+      <img src="img/automovil3.jpg" alt="Producto 4">
+      <h2>Producto 4</h2>
+      <p>Descripción del automovil 4.</p>
+      <p>Precio: $90</p>
+      <button>Ver</button>
+    </div>
+  </section>
+
+  <div class="titulo"> <h1> Tipo Camionetas</h1></div>
+  <section class="productos">
+      <div class="producto">
+        <img src="img/camioneta01.jpeg" alt="Producto 1">
+        <h2>Lavado y desinfecsion de colchones</h2>
+        <p>Descripción de la camioneta 1.</p>
+        <p>Precio: $100</p>
+        <button>Ver</button>
+      </div>
+      
+      <div class="producto">
+        <img src="img/camioneta02.jpg" alt="Producto 2">
+        <h2>Lavado de fachada</h2>
+        <p>Descripción de la camioneta  2.</p>
+        <p>Precio: $80</p>
+        <button>Ver</button>
+      </div>
+      
+      <div class="producto">
+        <img src="img/camioneta03.jpg" alt="Producto 3">
+        <h2>Limpieza y desinfecsion de muebles</h2>
+        <p>Descripción de la camioneta 3.</p>
+        <p>Precio: $120</p>
+        <button>Ver</button>
+      </div>
+      
+      <div class="producto">
+        <img src="img/camioneta04.jpg" alt="Producto 4">
+        <h2>Pintura De Fachada</h2>
+        <p>Descripción de la camioneta  4.</p>
+        <p>Precio: $90</p>
+        <button>Ver</button>
+      </div>
+    </section>
+
+    <div class="titulo"> <h1> Tipo Vans</h1></div>
+    <section class="productos">
+        <div class="producto">
+          <img src="img/vans1.jpg" alt="Producto 1">
+          <h2>Lavado y desinfecsion de colchones</h2>
+          <p>Descripción de la  vans 1.</p>
+          <p>Precio: $100</p>
+          <button>Ver</button>
+        </div>
+    
+    <div class="producto">
+      <img src="img/vans2.jpg" alt="Producto 2">
+      <h2>Producto 2</h2>
+      <p>Descripción de la vans 2.</p>
+      <p>Precio: $80</p>
+      <button>Ver</button>
+    </div>
+    
+    <div class="producto">
+      <img src="img/vans3.jpg" alt="Producto 3">
+      <h2>Producto 3</h2>
+      <p>Descripción de la vans 3.</p>
+      <p>Precio: $120</p>
+      <button>Ver</button>
+    </div>
+    
+    <div class="producto">
+      <img src="img/vans4.jpg" alt="Producto 4">
+      <h2>Producto 4</h2>
+      <p>Descripción de la vans 4.</p>
+      <p>Precio: $90</p>
+      <button>Ver</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
